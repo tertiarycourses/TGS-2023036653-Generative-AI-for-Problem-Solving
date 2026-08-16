@@ -103,7 +103,9 @@ SCHEDULE = {
     ]),
     2: (C.DAY_THEMES[2], [
         ("9:30", "10:00", 30, "recap",
-         "Day 1 recap and mandatory digital attendance (AM). " + span(A["end_day1"], A["topics"][2] - 1)),
+         # from the Day 1 closing block (lunch divider onwards) through the recap slide
+         "Day 1 recap and mandatory digital attendance (AM). "
+         + span(min(s for s in A["lunch"] if s > A["activities"][5][1]), A["recap_day1"])),
         ("10:00", "10:45", 45, "topic",
          "Topic 2 — Divergence before convergence: the solution funnel, divergent techniques (brainstorming, "
          "SCAMPER, Generic Parts, analogy, nominal group), and separating hard constraints from habits. "

@@ -102,8 +102,12 @@ ANCHORS = dict(
     assessment=all_hits(lambda t: "Final Assessment" in t and "Written Assessment (WA)" in t),
     flow=all_hits(lambda t: "Assessment Flow" in t),
     attendance=all_hits(lambda t: "Digital Attendance" in t and "TRAQOM" in t),
-    lunch=all_hits(lambda t: "Lunch Break" in t),
-    end_day1=first(lambda t: "End of Day 1" in t),
+    # NB: the Day 1/Day 2 lesson-plan TABLE slides quote "Lunch Break" and
+    # "End of Day 1" as row text, so a naive substring match lands on the table
+    # rather than the real divider. Divider slides are short and start with the
+    # phrase, so anchor on that.
+    lunch=all_hits(lambda t: t.strip().startswith("Lunch Break")),
+    end_day1=first(lambda t: t.strip().startswith("End of Day 1")),
     recap_day1=first(lambda t: "Day 1 in one line" in t),
     toolkit=first(lambda t: "Four tools. Four different jobs." in t
                   or "Choosing Your Root Cause Tool" in t),
@@ -130,3 +134,38 @@ print("  briefing:", ANCHORS["briefing"], " assessment:", ANCHORS["assessment"],
 missing = [k for k, v in ANCHORS.items() if v is None]
 if missing:
     raise SystemExit("ANCHOR NOT FOUND: %s — the deck changed; fix the matcher." % missing)
+
+# ---- sanity assertions -------------------------------------------------------
+# A missing anchor is caught above. These catch the nastier case: an anchor that
+# is PRESENT but points at the wrong slide (e.g. matching the lesson-plan table's
+# row text instead of the real divider), which silently produces wrong LP refs.
+t1, t2, t3 = topics[1], topics[2], topics[3]
+problems = []
+if not (t1 < t2 < t3):
+    problems.append("topic dividers out of order: %s" % topics)
+if ANCHORS["end_day1"] <= t1:
+    problems.append("end_day1 (%d) must come after the Topic 1 divider (%d)"
+                    % (ANCHORS["end_day1"], t1))
+if not (ANCHORS["end_day1"] < t2):
+    problems.append("end_day1 (%d) must precede the Topic 2 divider (%d)"
+                    % (ANCHORS["end_day1"], t2))
+if ANCHORS["recap_day1"] is not None and not (ANCHORS["end_day1"] < ANCHORS["recap_day1"] < t2):
+    problems.append("Day 1 recap (%s) must sit between End of Day 1 (%d) and Topic 2 (%d)"
+                    % (ANCHORS["recap_day1"], ANCHORS["end_day1"], t2))
+early_lunch = [s for s in ANCHORS["lunch"] if s < t1]
+if early_lunch:
+    problems.append("lunch anchors before the Topic 1 divider: %s" % early_lunch)
+for n, (lo, hi) in acts.items():
+    if lo > hi:
+        problems.append("activity %d range inverted: %d-%d" % (n, lo, hi))
+    if n > 1 and lo <= acts[n - 1][1]:
+        problems.append("activity %d (%d) overlaps activity %d (ends %d)"
+                        % (n, lo, n - 1, acts[n - 1][1]))
+if sorted(acts) != list(range(1, len(acts) + 1)):
+    problems.append("activity numbering not contiguous: %s" % sorted(acts))
+if ANCHORS["briefing"][-1] >= ANCHORS["assessment"][-1]:
+    problems.append("closing Briefing (%d) must precede Assessment (%d)"
+                    % (ANCHORS["briefing"][-1], ANCHORS["assessment"][-1]))
+if problems:
+    raise SystemExit("ANCHOR SANITY FAILED:\n  - " + "\n  - ".join(problems))
+print("  anchor sanity checks: OK")
