@@ -1,0 +1,28 @@
+# Activity 10 — Measuring Effectiveness: Did It Actually Work?
+# WSQ - Generative AI for Problem Solving
+# Paste into ChatGPT / Copilot / Gemini / Claude
+
+Act as a performance evaluation analyst. Assess whether this improvement programme worked. Be rigorous and do not flatter the results.
+
+Results after 90 days (metric: baseline -> target -> actual):
+App load 4.8s -> <2.0s -> 1.7s
+Checkout completion 51% -> 68% -> 63%
+Cart abandonment 74% -> 60% -> 64%
+Online sales S$1.9m -> S$2.8m -> S$2.5m
+CSAT 70% -> 85% -> 72%
+Complaints/week 410 -> 150 -> 295
+Product return rate 12% -> 5% -> 13% (WORSE)
+Repeat purchase 29% -> 40% -> 31%
+Supplier QC checklist adopted by 4 of 12 suppliers
+Cart recovery conversion 3.1% against an 8% target
+
+Context: the 90-day window included the Great Singapore Sale.
+
+Produce:
+1. A verdict per metric: Met / Partially met / Not met / Deteriorated
+2. Which solutions can be credited with which movements — and where you CANNOT establish attribution, say so explicitly and explain why
+3. Why the product return rate got WORSE despite the QC initiative — give the most likely explanation and state what evidence would confirm it
+4. Separate LEADING from LAGGING indicators here, and explain why CSAT and repeat purchase barely moved even though operational metrics improved
+5. How the Great Singapore Sale confounds this evaluation, and what analysis would isolate the programme effect from the seasonal effect
+6. A clear recommendation to the CFO on releasing the next S$200k tranche: continue, adjust, or stop — with reasoning
+7. The three things you would measure differently next time

@@ -1,0 +1,27 @@
+# Activity 7 — Converging: Impact-Ease Matrix and Weighted Decision Matrix
+# WSQ - Generative AI for Problem Solving
+# Paste into ChatGPT / Copilot / Gemini / Claude
+
+Act as a decision analyst. I will give you a list of candidate solutions. Do NOT add new ideas.
+
+STEP 1 — Classify every solution on an Impact vs Ease matrix as exactly one of:
+- Quick Win (high impact, easy)
+- Big Bet (high impact, hard)
+- Fill-In (low impact, easy)
+- Thankless Task (low impact, hard)
+Give a one-line reason for each placement.
+
+STEP 2 — Take only the Quick Wins and Big Bets and score them in a weighted decision matrix:
+- Impact on root cause (weight 35%)
+- Speed to measurable effect (20%)
+- Cost within a S$250k envelope (20%)
+- Clinical/regulatory risk (15%)
+- Staff and client acceptance (10%)
+Score each 1-5, show the weighted total, and rank them.
+
+STEP 3 — Recommend the best FOUR as a portfolio, and explicitly state:
+- why this combination is stronger than the top four individual scores
+- which two solutions overlap or make each other redundant
+- what the portfolio still leaves unaddressed
+
+Solutions: [paste your team's list here]

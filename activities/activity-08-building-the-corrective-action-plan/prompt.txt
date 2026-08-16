@@ -1,0 +1,24 @@
+# Activity 8 — Building the Corrective Action Plan
+# WSQ - Generative AI for Problem Solving
+# Paste into ChatGPT / Copilot / Gemini / Claude
+
+You are an execution-focused planning assistant. Convert each approved solution into a corrective action plan row. Be concrete and brief — no theory.
+
+For EACH solution, produce exactly these fields:
+- Root cause addressed (link back to the diagnosis)
+- Corrective action (one specific sentence)
+- Owner (a job title, not a department)
+- Timeline (start, key milestone, completion)
+- Resources (budget in S$, people, tools)
+- Success measure (metric + baseline + target)
+- Key risk + mitigation
+- Review checkpoint (date and the decision to be made at it)
+
+Then flag, in a separate section:
+1. Any two actions that depend on each other and must be sequenced
+2. Any owner who appears on more than two actions (overload risk)
+3. Any success measure that cannot actually be measured with data the organisation already has
+
+Approved solutions: [paste your four here]
+Root cause: 44% phlebotomist turnover leaving 40% of the 07:00 roster untrained, causing 14-min draws vs 6-min, 31% appointment overruns and 23% of samples missing the 09:45 courier.
+Budget: S$250,000 over 12 months.

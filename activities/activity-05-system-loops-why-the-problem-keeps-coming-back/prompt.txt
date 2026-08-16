@@ -1,0 +1,15 @@
+# Activity 5 — System Loops: Why the Problem Keeps Coming Back
+# WSQ - Generative AI for Problem Solving
+# Paste into ChatGPT / Copilot / Gemini / Claude
+
+Act as a systems thinking facilitator. Help me map the causal feedback loops in this case.
+
+Situation: A bank branch added 2 counters at peak by redeploying back-office staff. Wait time fell from 58 to 34 minutes in month 1, then rose to 61 minutes by month 4 — worse than the starting point.
+
+Observed changes over 4 months: back-office backlog 0.5 -> 2.0 days; teller errors 6% -> 14%; rework returning to the counter rose; overtime 88 -> 196 hrs/month; resignations rose; share of tellers under 6 months 44% -> 58%; mean handling time 9 -> 13 min; digital adoption flat at ~20%.
+
+Produce:
+1. At least 2 REINFORCING (R) loops and 2 BALANCING (B) loops. For each, list the variables in causal order with (+) or (-) on each link, and name the loop
+2. Explain specifically WHY the month-1 improvement reversed — which loop overwhelmed which
+3. Identify the delay in the system and explain why the delay made the wrong decision look right
+4. Name 2 leverage points that would break the reinforcing loops, and say what makes them leverage rather than just more effort

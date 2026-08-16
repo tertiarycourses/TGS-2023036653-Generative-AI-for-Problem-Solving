@@ -1,0 +1,24 @@
+# Activity 6 — Divergent Ideation with GenAI (Breadth Before Judgement)
+# WSQ - Generative AI for Problem Solving
+# Paste into ChatGPT / Copilot / Gemini / Claude
+
+Act as an innovation consultant running a divergent ideation session. Do NOT evaluate or filter yet.
+
+Root cause to solve: A Singapore health-screening operator has 44% annual turnover among permanent phlebotomists. Vacancies are backfilled by agency relief staff who take 14 min per blood draw versus 6 min for trained staff. 40% of the 07:00 roster is relief staff, causing 31% of morning appointments to overrun and 23% of samples to miss the fixed 09:45 lab courier.
+
+Constraints: S$250k over 12 months; MOH phlebotomy competency standards cannot be relaxed; the 07:00-09:30 fasting window and the 09:45 courier are both fixed.
+
+Generate 20 distinct solutions grouped under:
+- People & Retention
+- Training & Onboarding
+- Process & Scheduling
+- Technology & Automation
+- Customer/Client Experience
+
+Rules:
+- Include at least 4 ideas that would normally be dismissed as unrealistic
+- Include at least 2 ideas borrowed from a COMPLETELY different industry (say which)
+- One line each, phrased as an action
+- Do NOT rank, cost or evaluate them
+
+Then, separately: apply SCAMPER (Substitute, Combine, Adapt, Modify, Put to another use, Eliminate, Reverse) to the single assumption that 'every draw must be done by a phlebotomist at the centre between 07:00 and 09:30' and give one idea per SCAMPER letter.

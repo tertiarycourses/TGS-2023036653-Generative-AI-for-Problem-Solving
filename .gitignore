@@ -1,0 +1,40 @@
+# ---- CONFIDENTIAL — never push to GitHub ----
+assessment/
+# the assessment content module carries the questions AND the model answers
+.claude/skills/wsq-assessment/assessment_data.py
+*.env
+.env
+.env.*
+!.env.example
+**/lms_tms_api_key
+**/*api_key*
+**/*credentials*
+**/*secret*
+
+# ---- archives / binaries we do not ship ----
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.rar
+
+# ---- reference material (third-party / legacy source decks) ----
+reference/
+
+# ---- OS / editor noise ----
+.DS_Store
+**/.DS_Store
+Thumbs.db
+desktop.ini
+._*
+~$*
+*.tmp
+*.swp
+.idea/
+.vscode/
+
+# ---- python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/

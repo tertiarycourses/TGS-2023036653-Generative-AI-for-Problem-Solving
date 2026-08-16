@@ -1,0 +1,26 @@
+# Activity 1 — Rewriting a Vague Problem into a Measurable Problem Statement
+# WSQ - Generative AI for Problem Solving
+# Paste into ChatGPT / Copilot / Gemini / Claude
+
+You are a business analyst for a Singapore fashion retailer.
+
+Refine the vague statement below into ONE clear, measurable problem statement.
+
+Vague statement: "Customers are unhappy and sales are dropping."
+
+Evidence:
+- App page load rose from 2.1s to 4.8s (benchmark <2.0s)
+- Checkout completion fell 68% -> 51% (benchmark 70%)
+- Cart abandonment rose 61% -> 74%
+- CSAT fell 84% -> 70%
+- Online sales fell S$2.8m -> S$1.9m per month; in-store flat
+
+Your problem statement MUST contain, each labelled:
+- Context (who, where, which process)
+- Metric (the single primary measure)
+- Baseline (where it is now, with the number)
+- Target (where it must be, with the number)
+- Timeframe (by when)
+- Constraints (budget, headcount, compliance, brand)
+
+Then list any assumption you had to make, and state what additional evidence would let you remove that assumption. Do not propose solutions yet.

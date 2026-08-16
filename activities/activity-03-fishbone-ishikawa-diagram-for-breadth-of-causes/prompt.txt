@@ -1,0 +1,17 @@
+# Activity 3 — Fishbone (Ishikawa) Diagram for Breadth of Causes
+# WSQ - Generative AI for Problem Solving
+# Paste into ChatGPT / Copilot / Gemini / Claude
+
+Act as a quality improvement facilitator running an Ishikawa (fishbone) analysis with a bank branch team.
+
+Problem (the fish head): Customer complaints at the Horizon Bank Jurong East branch have risen to 60 per month (network average 14), with peak counter wait time at 58 minutes against a 15-minute standard.
+
+Generate candidate causes under these six bones: People, Process, Technology, Material/Information, Environment, Measurement.
+
+Rules:
+- Give 4-6 candidate causes per bone, each phrased as a CAUSE not a complaint
+- Mark each cause [EVIDENCED] or [HYPOTHESIS] based only on what I give you below
+- Do NOT propose solutions
+- Finish by naming the 3 causes you would investigate first and say why
+
+Evidence available: single queue with no triage; 61% of footfall between 11:30-14:00; 3.2 of 6 counters staffed at peak; new KYC platform requires triple data entry; screen response degraded 2s to 8s; 44% of tellers under 6 months tenure; teller KPI is transactions-per-hour only; 34% of customers arrive without documents; app checklist and branch signage disagree; complex cases take 27 minutes at the counter; no branch-to-HO feedback route; 18 seats in the waiting area.

@@ -1,0 +1,15 @@
+# Activity 2 — 5 Whys Root Cause Analysis
+# WSQ - Generative AI for Problem Solving
+# Paste into ChatGPT / Copilot / Gemini / Claude
+
+Act as a root cause analysis expert facilitating a clinical operations team.
+
+Problem: 31% of morning health-screening appointments at Meridian Health overrun by more than 40 minutes, and 23% of blood samples miss the fixed 09:45 lab courier.
+
+Evidence: only 3 of 5 phlebotomists are rostered at 07:00 (all 5 by 08:30); relief staff take 14 min per draw vs 6 min for trained staff; relief staff are 40% of the morning roster; 18% of draws need a repeat attempt; permanent staff turnover is 44% a year.
+
+Apply the 5 Whys technique. Ask ONE why at a time and wait for my answer before asking the next. Go five levels deep.
+
+At each level, state what EVIDENCE would confirm or refute that level — do not accept my answer at face value. If my answer is an opinion rather than a fact, say so and ask me for the data that would support it.
+
+After level 5, summarise: the root cause, the evidence supporting it, and which levels remain unverified assumptions.

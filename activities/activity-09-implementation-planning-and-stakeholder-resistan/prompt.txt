@@ -1,0 +1,26 @@
+# Activity 9 — Implementation Planning and Stakeholder Resistance
+# WSQ - Generative AI for Problem Solving
+# Paste into ChatGPT / Copilot / Gemini / Claude
+
+Act as a change management and implementation planning advisor for a Singapore fashion retailer.
+
+Approved solutions: (1) one-page guest checkout; (2) CDN + caching to bring app load from 4.8s to under 2.0s; (3) supplier QC checklist to cut the 12% return rate; (4) automated cart-recovery notifications.
+
+PART A — Implementation plan. For each solution give ONLY:
+- Action (what will be done)
+- Method/tool (how)
+- Owner and timeline (who, by when)
+- Sequencing note (what must happen before it)
+
+PART B — Stakeholder strategy. Stakeholders and positions:
+IT Development (at capacity, resists workload); Head of Marketing (sponsored a S$180k campaign the diagnosis implies was misdirected — resists); Store Operations (indifferent); 12 suppliers (face new QC standards — resist); Customer Service (supportive, overloaded); Finance (conditional on ROI evidence); COO (champion); frontline retail staff (fear job loss).
+
+For EACH stakeholder give:
+- Their specific objection in THEIR words, not yours
+- What they need to hear or receive to move
+- One concrete action to secure their cooperation
+- Who is best placed to deliver that message and why
+
+PART C — Name the single stakeholder most likely to sink this rollout, and explain what makes them dangerous. Then give a 90-day communication plan: what is communicated, to whom, how often, by whom.
+
+Be blunt about political realities. Do not assume goodwill.
